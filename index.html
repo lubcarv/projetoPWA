@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e91e63">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Divas 2000</title>
+  <meta name="description" content="Ouça os maiores sucessos das divas pop dos anos 2000. Beyoncé, Britney, Christina e muito mais!">
+
+  <link href="https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand titulo-pequeno" href="#home">Divas 2000</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home" data-page="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#artistas" data-page="artistas">Artistas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#videos" data-page="videos">Vídeos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre" data-page="sobre">Sobre</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="app">
+    <!-- Página Home -->
+    <section id="home" class="page active">
+      <!-- Cabeçalho -->
+      <header class="text-center py-5">
+        <h1 class="titulo-estilizado">Divas 2000</h1>
+        <p class="lead">Os maiores hits das rainhas do pop dos anos 2000</p>
+      </header>
+
+      <!-- Carrossel -->
+      <div class="container">
+        <div id="carouselDivas" class="carousel slide mb-5" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselDivas" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselDivas" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselDivas" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://i.pinimg.com/736x/22/ba/10/22ba10da58b8754458a5af523976f160.jpg" class="d-block w-100" alt="Beyoncé">
+              <div class="carousel-caption">
+                <h3>Beyoncé</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.pinimg.com/736x/b4/be/59/b4be59c06f1f1f8e013a408fdc9a182a.jpg" class="d-block w-100" alt="Britney Spears">
+              <div class="carousel-caption">
+                <h3>Britney Spears</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.pinimg.com/736x/0a/80/7a/0a807a7c2d1a8a43dc717bd9dddf81e5.jpg" class="d-block w-100" alt="Rihanna">
+              <div class="carousel-caption">
+                <h3>Rihanna</h3>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDivas" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDivas" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <div class="text-center mb-4">
+          <a href="#artistas" class="btn btn-primary btn-lg px-4" data-page="artistas">Ver Artistas</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página Artistas -->
+    <section id="artistas" class="page">
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Artistas Icônicas</h2>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="card cartao h-100">
+              <img src="https://i.pinimg.com/736x/22/ba/10/22ba10da58b8754458a5af523976f160.jpg" class="card-img-top" alt="Beyoncé">
+              <div class="card-body text-center">
+                <h5 class="card-title">Beyoncé</h5>
+                <p class="card-text">Queen B, uma das artistas mais influentes da história da música pop.</p>
+                <button class="btn btn-primary btn-ouvir" data-artista="Beyoncé">OUVIR AGORA</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card cartao h-100">
+              <img src="https://i.pinimg.com/736x/b4/be/59/b4be59c06f1f1f8e013a408fdc9a182a.jpg" class="card-img-top" alt="Britney Spears">
+              <div class="card-body text-center">
+                <h5 class="card-title">Britney Spears</h5>
+                <p class="card-text">A princesa do pop que revolucionou a música nos anos 2000.</p>
+                <button class="btn btn-primary btn-ouvir" data-artista="Britney Spears">OUVIR AGORA</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card cartao h-100">
+              <img src="https://i.pinimg.com/736x/0a/80/7a/0a807a7c2d1a8a43dc717bd9dddf81e5.jpg" class="card-img-top" alt="Rihanna">
+              <div class="card-body text-center">
+                <h5 class="card-title">Rihanna</h5>
+                <p class="card-text">Cantora, empresária e ícone fashion que conquistou o mundo.</p>
+                <button class="btn btn-primary btn-ouvir" data-artista="Rihanna">OUVIR AGORA</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card cartao h-100">
+              <img src="https://i.pinimg.com/736x/a2/3c/68/a23c6844ce39ce939dbb17105f9d48ff.jpg" class="card-img-top" alt="Christina Aguilera">
+              <div class="card-body text-center">
+                <h5 class="card-title">Christina Aguilera</h5>
+                <p class="card-text">Dona de uma das vozes mais poderosas da música pop.</p>
+                <button class="btn btn-primary btn-ouvir" data-artista="Christina Aguilera">OUVIR AGORA</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card cartao h-100">
+              <img src="https://i.pinimg.com/736x/40/74/81/4074818127d0069d01cfec888482d535.jpg" class="card-img-top" alt="Lady Gaga">
+              <div class="card-body text-center">
+                <h5 class="card-title">Lady Gaga</h5>
+                <p class="card-text">Artista revolucionária conhecida por seu estilo único e versatilidade.</p>
+                <button class="btn btn-primary btn-ouvir" data-artista="Lady Gaga">OUVIR AGORA</button>
+              </div>
+            </div>
+          </div>
+
+
+    </section>
+
+    <section id="videos" class="page">
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Vídeos das Divas</h2>
+        <p class="text-center mb-4">Clique em uma artista na seção Artistas para ver seus vídeos</p>
+
+        <div id="loading-spinner" class="text-center my-5" style="display:none;">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Carregando...</span>
+          </div>
+        </div>
+
+        <div id="video-container" class="row g-4"></div>
+      </div>
+    </section>
+
+    <section id="sobre" class="page">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="text-center mb-4">Sobre o Divas 2000</h2>
+                <p>O <strong>Divas 2000</strong> é um projeto dedicado a celebrar as grandes artistas femininas da música pop que definiram a cultura e os hits dos anos 2000 até hoje.</p>
+                <p>Nosso objetivo é proporcionar aos fãs uma experiência nostálgica e ao mesmo tempo atual, trazendo os maiores sucessos dessas artistas icônicas que transformaram a indústria musical.</p>
+                <p>Este projeto foi desenvolvido utilizando:</p>
+                <ul>
+                  <li>HTML5 semântico e CSS moderno</li>
+                  <li>JavaScript e manipulação avançada de DOM</li>
+                  <li>Design responsivo com abordagem Mobile First</li>
+                  <li>Framework Bootstrap 5</li>
+                  <li>Arquitetura Single Page Application (SPA)</li>
+                  <li>Integração com API do YouTube via Axios</li>
+                </ul>
+                <p>Aproveite!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-auto py-4 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>Divas 2000</h5>
+          <p class="mb-0">A era de ouro da música pop</p>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="d-flex justify-content-center">
+            <a href="#" class="social-icon mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon mx-2"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">&copy; 2025 Divas 2000</p>
+          <p class="mb-0">Todos os direitos reservados</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="youtube.js"></script>
+  <script src="script.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker
+          .register("service-worker.js")
+          .then((registration) => {
+            console.log("ServiceWorker registrado com sucesso:", registration.scope);
+          })
+          .catch((error) => {
+            console.error("Falha ao registrar o ServiceWorker:", error);
+          });
+      });
+    }
+  </script>
+
+</body>
+
+</html>
+const navLinks = document.querySelectorAll(".nav-link");
+const pages = document.querySelectorAll(".page");
+const ouvirButtons = document.querySelectorAll(".btn-ouvir");
+
+let currentPage = "home";
+let currentArtist = "";
+
+document.addEventListener("DOMContentLoaded", () => {
+console.log("Divas 2000 App carregado!");
+
+setupNavigation();
+
+setupArtistButtons();
+
+initializeBootstrapComponents();
+
+handleInitialNavigation();
+});
+
+function setupNavigation() {
+navLinks.forEach((link) => {
+link.addEventListener("click", (e) => {
+e.preventDefault();
+const targetPage = link.getAttribute("data-page");
+navigateToPage(targetPage);
+
+window.location.hash = targetPage;
+});
+});
+
+window.addEventListener("popstate", () => {
+handleInitialNavigation();
+});
+}
+
+function handleInitialNavigation() {
+const hash = window.location.hash.substring(1);
+if (hash && ["home", "artistas", "videos", "sobre"].includes(hash)) {
+navigateToPage(hash);
+} else {
+navigateToPage("home");
+}
+}
+
+function navigateToPage(pageName) {
+if (pageName === currentPage) return;
+
+pages.forEach((page) => page.classList.remove("active"));
+navLinks.forEach((link) => link.classList.remove("active"));
+
+document.getElementById(pageName).classList.add("active");
+document.querySelector(`[data-page="${pageName}"]`).classList.add("active");
+
+window.scrollTo(0, 0);
+
+currentPage = pageName;
+
+if (pageName === "videos" && currentArtist) {
+loadVideosForArtist(currentArtist);
+}
+
+const navbarCollapse = document.querySelector(".navbar-collapse");
+if (navbarCollapse.classList.contains("show")) {
+const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+bsCollapse.hide();
+}
+}
+
+function setupArtistButtons() {
+ouvirButtons.forEach((button) => {
+button.addEventListener("click", () => {
+const artista = button.getAttribute("data-artista");
+currentArtist = artista;
+
+navigateToPage("videos");
+
+loadVideosForArtist(artista);
+});
+});
+}
+
+function loadVideosForArtist(artista) {
+const spinner = document.getElementById("loading-spinner");
+const videoContainer = document.getElementById("video-container");
+
+videoContainer.innerHTML = "";
+spinner.style.display = "block";
+
+buscarVideos(artista)
+.then((videos) => {
+renderizarVideos(videos);
+spinner.style.display = "none";
+})
+.catch((error) => {
+console.error("Erro ao buscar vídeos:", error);
+videoContainer.innerHTML = `
+<div class="col-12 text-center">
+  <div class="alert alert-danger">
+    Erro ao carregar vídeos. Por favor, tente novamente mais tarde.
+  </div>
+</div>
+`;
+spinner.style.display = "none";
+});
+}
+
+function initializeBootstrapComponents() {
+const tooltipTriggerList = [].slice.call(
+document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+tooltipTriggerList.map(function (tooltipTriggerEl) {
+return new bootstrap.Tooltip(tooltipTriggerEl);
+});
+
+const carousel = document.querySelector(".carousel");
+if (carousel) {
+new bootstrap.Carousel(carousel, {
+interval: 3000,
+wrap: true,
+});
+}
+}
+
+function createVideoModal(videoId, title) {
+const existingModal = document.getElementById("videoModal");
+if (existingModal) {
+existingModal.remove();
+}
+
+const modalHTML = `
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoModalLabel">${title}</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" title="YouTube video" allowfullscreen allow="autoplay"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+document.body.insertAdjacentHTML("beforeend", modalHTML);
+
+const videoModal = new bootstrap.Modal(document.getElementById("videoModal"));
+videoModal.show();
+
+document
+.getElementById("videoModal")
+.addEventListener("hidden.bs.modal", function () {
+document.getElementById("videoModal").remove();
+});
+}
+
+function renderizarVideos(videos) {
+const videoContainer = document.getElementById("video-container");
+videoContainer.innerHTML = "";
+
+if (!videos || videos.length === 0) {
+videoContainer.innerHTML = `
+<div class="col-12 text-center">
+  <div class="alert alert-warning">
+    Nenhum vídeo encontrado para esta artista.
+  </div>
+</div>
+`;
+return;
+}
+
+videos.forEach((video) => {
+const videoCard = document.createElement("div");
+videoCard.className = "col-sm-6 col-md-4 col-lg-3 video-item";
+videoCard.innerHTML = `
+<div class="card cartao h-100">
+  <div class="video-thumbnail">
+    <img src="${video.thumbnail}" class="card-img-top" alt="${
+      video.title
+    }">
+    <i class="fas fa-play-circle play-icon"></i>
+  </div>
+  <div class="card-body">
+    <h6 class="card-title">${limitText(video.title, 60)}</h6>
+    <p class="card-text small">${limitText(video.channelTitle, 30)}</p>
+  </div>
+</div>
+`;
+
+videoCard.addEventListener("click", () => {
+createVideoModal(video.videoId, video.title);
+});
+
+videoContainer.appendChild(videoCard);
+});
+}
+
+function limitText(text, maxLength) {
+return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
+}
+
+window.renderizarVideos = renderizarVideos;
