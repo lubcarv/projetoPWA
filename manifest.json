@@ -2,7 +2,7 @@
   "name": "Divas 2000",
   "short_name": "Divas",
   "description": "Ouça os maiores sucessos das divas pop dos anos 2000.",
-  "star_url": "index-1.html",
+  "start_url": "index-1.html",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#e91e63",
@@ -14,7 +14,7 @@
       "type": "image/png"
     },
     {
-      "src": "https://i.pinimg.com/736x/b4/be/59/b4be59c06f1f1f8e013a408fdc9a>",
+      "src": "https://i.pinimg.com/736x/b4/be/59/b4be59c06f1f1f8e013a408fdc9a.jpg",
       "sizes": "512x512",
       "type": "image/png"
     }
